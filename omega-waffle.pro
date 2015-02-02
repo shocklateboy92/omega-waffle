@@ -5,7 +5,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     Attribute.cpp \
-    Bonus.cpp
+    Bonus.cpp \
+    Sheet.cpp \
+    WatchableListProperty.cpp
 
 RESOURCES += qml.qrc
 
@@ -17,4 +19,6 @@ include(deployment.pri)
 
 HEADERS += \
     Attribute.h \
-    Bonus.h
+    Bonus.h \
+    Sheet.h \
+    WatchableListProperty.h

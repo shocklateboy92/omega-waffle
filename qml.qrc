@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
+        <file>HpArea.qml</file>
+        <file>HpAreaForm.ui.qml</file>
+        <file>Save.qml</file>
+        <file>SaveForm.ui.qml</file>
     </qresource>
 </RCC>

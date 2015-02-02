@@ -15,6 +15,8 @@ public:
     int amount() const;
     QString name() const;
 
+    static int add(int acc, const Bonus &a);
+
 signals:
     void amountChanged(int arg);
     void nameChanged(QString arg);

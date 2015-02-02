@@ -1,4 +1,5 @@
 #include "Attribute.h"
+#include <algorithm>
 
 Attribute::Attribute(QQuickItem *parent)
     : QQuickItem(parent)
@@ -22,7 +23,7 @@ QQmlListProperty<Bonus> Attribute::modifiers()
 
 int Attribute::value() const
 {
-    return -1;
+    return std::accumulate(m_modifiers.begin(), m_modifiers.end(), 0, Bonus::add);
 }
 
 //void Attribute::setModifiers(QQmlListProperty<Bonus> arg)

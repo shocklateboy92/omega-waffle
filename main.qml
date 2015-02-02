@@ -25,11 +25,8 @@ ApplicationWindow {
         }
     }
 
-    Text {
+    MainForm {
         anchors.fill: parent
-        text: attr.value
-        font.pixelSize: height
-        horizontalAlignment: Text.AlignHCenter
     }
 
     Attribute {

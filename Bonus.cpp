@@ -1,9 +1,8 @@
 #include "Bonus.h"
 
 Bonus::Bonus(QQuickItem *parent)
-    : QQuickItem(parent)
+    : QQuickItem(parent), m_amount(0)
 {
-
 }
 
 Bonus::~Bonus()
@@ -19,6 +18,11 @@ int Bonus::amount() const
 QString Bonus::name() const
 {
     return m_name;
+}
+
+int Bonus::add(int acc, const Bonus &a)
+{
+    return acc + a.amount();
 }
 
 void Bonus::setAmount(int arg)

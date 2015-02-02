@@ -20,9 +20,9 @@ QString Bonus::name() const
     return m_name;
 }
 
-int Bonus::add(int acc, const Bonus &a)
+int Bonus::add(int acc, const Bonus *a)
 {
-    return acc + a.amount();
+    return acc + a->amount();
 }
 
 void Bonus::setAmount(int arg)

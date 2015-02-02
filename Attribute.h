@@ -31,7 +31,7 @@ signals:
     void valueChanged(int arg);
 
 public slots:
-//    void setModifiers(QQmlListProperty<Bonus> arg);
+    void onModifierChanged(Bonus *m);
 
 private:
     QList<QString> m_model;

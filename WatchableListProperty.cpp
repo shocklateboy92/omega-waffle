@@ -1,13 +1,12 @@
 #include "WatchableListProperty.h"
 
 template <typename T>
-WatchableListProperty<T>::WatchableListProperty(QList<T> data)
+ListPropertyUtils<T>::ListPropertyUtils()
 {
-
 }
 
 template <typename T>
-WatchableListProperty<T>::~WatchableListProperty()
+ListPropertyUtils<T>::~ListPropertyUtils()
 {
 
 }

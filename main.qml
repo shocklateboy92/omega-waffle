@@ -25,8 +25,11 @@ ApplicationWindow {
         }
     }
 
-    MainForm {
+    Text {
         anchors.fill: parent
+        horizontalAlignment: Text.AlignHCenter
+        font.pixelSize: height
+        text: attr.value
     }
 
     Attribute {
@@ -42,5 +45,9 @@ ApplicationWindow {
             }
 
         ]
+    }
+
+    Component.onCompleted: {
+        console.log(attr.value);
     }
 }

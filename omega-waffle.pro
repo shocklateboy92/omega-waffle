@@ -7,7 +7,6 @@ SOURCES += main.cpp \
     Attribute.cpp \
     Bonus.cpp \
     Sheet.cpp \
-    WatchableListProperty.cpp
 
 RESOURCES += qml.qrc
 
@@ -21,4 +20,3 @@ HEADERS += \
     Attribute.h \
     Bonus.h \
     Sheet.h \
-    WatchableListProperty.h

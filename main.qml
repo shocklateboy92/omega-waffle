@@ -5,25 +5,26 @@ import QtQuick.Dialogs 1.2
 
 import org.lasath.turbo_batman 1.0;
 
-ApplicationWindow {
-    title: qsTr("Hello World")
-    width: 640
-    height: 480
+Item {
+//    title: qsTr("Hello World")
+//    width: 640
+//    height: 480
+    anchors.fill: parent
     visible: true
 
-    menuBar: MenuBar {
-        Menu {
-            title: qsTr("&File")
-            MenuItem {
-                text: qsTr("&Open")
-                onTriggered: messageDialog.show(qsTr("Open action triggered"));
-            }
-            MenuItem {
-                text: qsTr("E&xit")
-                onTriggered: Qt.quit();
-            }
-        }
-    }
+//    menuBar: MenuBar {
+//        Menu {
+//            title: qsTr("&File")
+//            MenuItem {
+//                text: qsTr("&Open")
+//                onTriggered: messageDialog.show(qsTr("Open action triggered"));
+//            }
+//            MenuItem {
+//                text: qsTr("E&xit")
+//                onTriggered: Qt.quit();
+//            }
+//        }
+//    }
 
     Text {
         anchors.fill: parent
@@ -49,5 +50,7 @@ ApplicationWindow {
 
     Component.onCompleted: {
         console.log(attr.value);
+        console.log(height);
+        console.log(width);
     }
 }

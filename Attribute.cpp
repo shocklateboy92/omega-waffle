@@ -1,5 +1,6 @@
 #include "Attribute.h"
 #include <algorithm>
+#include <numeric>
 
 static void qlist_append(QQmlListProperty<Bonus> *p, Bonus *v);
 static int qlist_count(QQmlListProperty<Bonus> *p);

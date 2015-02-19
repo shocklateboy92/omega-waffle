@@ -7,8 +7,10 @@ SOURCES += main.cpp \
     Attribute.cpp \
     Bonus.cpp \
     Sheet.cpp \
+    ui/base/ui-loader.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    ui/ui.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -20,3 +22,4 @@ HEADERS += \
     Attribute.h \
     Bonus.h \
     Sheet.h \
+    ui/base/ui-loader.h
